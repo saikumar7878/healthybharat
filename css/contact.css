@@ -1,0 +1,447 @@
+body{
+  font-family: Arial,Helvetica,sans-serif;
+  background-color:rgba(255, 230, 180, 0.5);
+  background-color: #ffffff;
+  color:#019904;
+  padding: 0;
+  margin: 0;
+}
+
+/*global designs*/
+.container{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+/*Header*/
+header{
+  width: 100%;
+  background: #50af00;
+  color: #ffffff;
+  padding-top: 20px;
+  min-height: 120px;
+}
+.logo{
+    float: left;
+    cursor: pointer;
+    margin-left: 80px;
+    max-width: 11%;
+}
+.mobie_heading , .icon{
+  display: none;
+}
+/*Login page css starts from here*/
+input[type=text], input[type=password], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+.login2signup{
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cancelbtn_1{
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.cancelbtn_2{
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.imgcontainer{
+  text-align: center;
+  margin: 24px 0 0px 0;
+  position: relative;
+}
+img.avatar{
+  width: 20%;
+  border-radius: 50%;
+}
+.form_container{
+  color: #000000;
+  font-weight: bold;
+  padding: 16px;
+  height: 10%;
+}
+span.psw{
+  float: right;
+  padding-top: 16px;
+}
+.login_signup_form{
+  display: none; /*Hidden by default*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.login_signup_form a{
+  text-decoration: underline;
+  color: #000000;
+}
+.login_modal{
+  background-color: #fefefe;
+  margin: 1% auto 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+}
+.close{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover, .close:focus{
+  color: red;
+  cursor:pointer;
+}
+.animate{
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom{
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+/*@media screen and (max-width: 300px) {
+  span.psw{
+    display: block;
+    float: none;
+  }
+  .cancelbtn{
+    width: 100%;
+  }
+}*/
+.forgot_password_container{
+  display:none; /*Hidden by default*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.forgot_password_modal{
+  background-color: #fefefe;
+  margin: 1% auto 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+  color: #000000;
+}
+.forgot_password_form{
+  color: #000000;
+  font-weight: bold;
+  padding: 16px;
+  height: 10%;
+}
+.button_1{
+  background-color: #ffffff;
+  color: #019904;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin:-5px 0;
+  border:0;
+  border-radius:15%;
+  cursor: pointer;
+  width: 100%;
+}
+.button_1:hover{
+  opacity: 0.8;
+}
+/*sign up css starts*/
+/*.signup_form{
+  display: none; /*Hidden by default*/
+  /*position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 20px;
+}*/
+/*sign up css ends*/
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+header a:hover{
+  color: #000000;
+  font-weight: bold;
+}
+.login{
+  margin-top: 3.5%;
+  position: relative;
+  margin-left: 60px;
+  float: right;
+}
+.cart img{
+  margin-top: 3.5%;
+  position: relative;
+  margin-left: 10px;
+  float: right;
+  cursor: pointer;
+  max-width: 55px;
+  max-height: 42px;
+}
+/*.dropdown{
+  float: left;
+  overflow: hidden;
+}
+.dropdown{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  color: #ffffff;
+  background-color: inherit;
+  font-family: inherit;
+}
+.dropdown:hover{
+  color: #000000;
+  font-weight: bold;
+}*/
+
+.dropdown_content a{
+  float: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+.nav-item:hover .dropdown_content{
+  display: block;
+}
+/*header ul{
+  margin: 0;
+  padding: 0;
+}
+header li{
+  float: left;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+header nav{
+  float: right;
+  margin-top: 50px;
+}*/
+
+/*new navbar css code*/
+ body.offcanvas-active{
+   overflow: hidden;
+ }
+ .offcanvas-header{
+   display: none;
+ }
+/*navbar code ends*/
+/*navbar css in design css*/
+.bg-primary{
+  margin-top: 3%;
+  padding-left: 5%;
+  border: 2px solid #ffffff;
+  background-color: #50af00 !important;
+}
+.navbar-nav a{
+  color: #ffffff !important;
+}
+.navbar-nav a:hover{
+  color: #000000 !important;
+}
+.dropdown_content{
+  display: none;
+  position: fixed;
+  background-color: #ffffff;
+  border-radius: 15%;
+  min-width: 5%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1 !important;
+}
+.dropdown_content a{
+  color: #019f49 !important;
+  font-weight: bold;
+}
+.active{
+  /*for hightlight of navbar element*/
+  background-color: #c00;
+  color: #0f0;
+}
+/*navbar css in desidn css ends here*/
+/*section css starts*/
+input[type=text], input[type=tel], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  font-family: cursive;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form_container2 {
+  float: left;
+  width: 40%;
+  font-weight: bold;
+  font-family: cursive;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.contact_container h3{
+  font-weight: bold;
+  font-size: 27px;
+  font-style: italic;
+  font-family: cursive;
+  margin-bottom: 0;
+  padding: 0;
+}
+.contact_img{
+  float: right;
+  width: 50%;
+  margin-top: 80px;
+  padding: 0;
+}
+.contact_img img{
+  width: 100%;
+  height: 100%;
+}
+/*.dropdown{
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  color: #ffffff;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown:hover .dropbtn{
+  color: #000000;
+  font-weight: bold;
+}
+.dropdown_content{
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 15%;
+  min-width: 5%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown_content a{
+  float: none;
+  color: #019904;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown_content{
+  display: block;
+}
+.active{
+  background-color: #c00;
+  color: #0f0;
+}*/
+/*footer*/
+footer#main{
+  background-color: #004d02;
+  color: #ffffff;
+}
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.social_media{
+  font-family: serif;
+}
+.edge_hb li{
+  display: flex;
+}
+.edge_hb ul{
+  margin: 0;
+  padding: 0;
+}
+.edge_hb{
+  margin-top: 15px;
+  font-family: cursive;
+}
+footer a:hover{
+  color: rgba(255,255,0, 1);
+  font-weight: bold;
+}
+address{
+  font-family: Arial sans-serif;
+  font-size: 16px;
+  float: right;
+  width: 60%;
+}
+/*.copyrights{
+  font-size: 16px;
+  float: right;
+  width:60%;
+}*/
+.fix_me img{
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  width: 5%;
+  height: 10%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--firebase database for login, signup-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <link rel="stylesheet" href="../css/signup.css" type="text/css">
+<title>Sign Up Form</title>
+</head>
+<body>
+  <!--  <div id="id02" class="login_signup_form">
+  <div class="login_modal animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+          <img src="./images/avatar.png" alt="login page avatar" class="avatar"><br><br>
+      </div> -->
+  <div class="container mobile_container">
+    <div class="login">
+      <div class="login_signup_form" id="id02">
+        <div class="login_modal animate" method="post">
+          <div class="imgcontainer">
+            <span onclick="window.location.href='../index.html'" class="close">&times;</span>
+            <img src="../images/avatar.png" alt="login page avatar" class="avatar"><br><br>
+          </div>
+          <div class="form_container" id="form_container">
+            <label >Your Name</label>
+            <input type="text" placeholder="Enter Your full name" name="fname" id="fname" required>
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" name="email" id="email" required>
+            <label>phone no.</label>
+            <input type="tel" placeholder="+1-555-555-1212" name="phone" id="phone" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            <label>Re-Enter Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" id="password2" required>
+            <input type="checkbox" checked="checked"> Remember me
+            <button type="submit" onclick="SignUp()">Sign Up</button>
+            <button type="button" onclick="window.location.href='../index.html'" class="cancelbtn_2"> Cancel</button><br>
+            Already have an account?<span onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" class="login2signup">Login</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--container ends-->
+  <script type="text/javascript" src="../javascript/login_signup.js"></script>
+</body>
+</html>

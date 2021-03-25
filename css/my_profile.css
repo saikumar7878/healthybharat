@@ -1,0 +1,91 @@
+body{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+.container{
+  padding: 3%;
+  margin: 7% 10% 10% 10%;
+  border-radius: 0.5rem;
+  background: #fff;
+  overflow: hidden;
+}
+.profile_head{
+  display: flex;
+}
+.img_container{
+  flex: 33%;
+}
+.img_container img{
+  display: block;
+  border-radius: 50%;
+  width: 70%;
+  height: 100%;
+}
+.img_container .file{
+  position: relative;
+  bottom: 0;
+  left: 14%;
+  overflow: hidden;
+  margin-top: -20%;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+  background: #21252949;
+}
+.img_container .file input{
+  position: absolute;
+  right: 0;
+  left: 23%;
+  opacity: 0;
+  top: 14px;
+}
+.btn-primary {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 30%;
+  transition: .5s ease;
+  opacity:	1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.profile{
+  flex: 43%;
+}
+.profile h1{
+  font-size: 50px;
+}
+.edit_profile{
+  flex: 10%;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 10%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.navbar{
+  float: left;
+  width: 30%;
+}
+.navbar li{
+  display: flex;
+  margin-top: 10px;
+}
+.navbar a{
+  text-decoration: none;
+}
+.user_details{
+  float: left;
+  width: 70%;
+}
+.detail_row{
+  display: flex;
+}
+.detail_col{
+  flex: 50%;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="organic products, areca plates, areca products, honey, ghee, biodegradable disposals, natural products, Healthy Bharat, Kiran Rathod, Eco friendly,  Hyderabad Entrepreneur, Young entrepreneur">
+        <meta name="description" content="I will write later">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="Avinash Gummadi, Sai kumar Avu">
+        <title>Organic products|healthybharat</title>
+        <link rel="icon" href="../images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+        <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../css/organic_products.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="container mobile_container">
+        <a href="../index.html"><img src="../images/logo.png" alt="healthy bharat logo" class="logo"></a>
+        <h3 class="mobie_heading" style="color:#ffffff">Healthy Bharat</h3>
+        <div class="cart">
+            <img src="../images/cart2.png" alt="cart symbol" class="cart_img">
+        </div>
+        <div class="login">
+          <button onclick="document.getElementById('id01').style.display='block'" class="button_1">LOGIN</button>
+          <div id="id01" class="login_signup_form">
+          <form class="login_modal animate">
+              <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                  <img src="../images/avatar.png" alt="login page avatar" class="avatar"><br><br>
+              </div>
+              <div class="form_container">
+                <label>Email </label>
+                <input type="email" placeholder="Enter email" name="username" required><br>
+                <label>Password </label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
+                <button type="submit">Login</button><br>
+                <input type="checkbox" checked="checked"> Remember me <br><br>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_1"> Cancel</button>
+                <span class="psw">Forgot<span onclick="document.getElementById('id01').style.display='none';document.getElementById('id03').style.display='block'" class="login2signup">password</span> </span><br><br>
+                <!--No account yet? <button onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="button_2">CREATE ACCOUNT</button>-->
+                No account yet?<span onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="login2signup">Create an account</span>
+              </div>
+          </form>
+        </div><!--id01, login_form div ends-->
+        <div id="id02" class="login_signup_form">
+        <form class="login_modal animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+                <img src="../images/avatar.png" alt="login page avatar" class="avatar"><br><br>
+            </div>
+            <div class="form_container">
+              <label >Your Name</label>
+              <input type="text" placeholder="Enter Your full name" name="fname" required>
+              <label>Email</label>
+              <input type="email" placeholder="Enter email" name="email" required>
+              <label>Password : </label>
+              <input type="password" placeholder="Enter Password" name="password" required>
+              <label>Re-Enter Password : </label>
+              <input type="password" placeholder="Enter Password" name="password" required>
+              <input type="checkbox" checked="checked"> Remember me
+              <button type="submit">Sign Up</button>
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn_2"> Cancel</button><br>
+              <!--Having Account?<button onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" class="button_2">LOGIN</button>-->
+              Already have an account?<span onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" class="login2signup">Login</span>
+            </div>
+        </form>
+      </div><!--id02, signup_form div ends-->
+      <div id="id03" class="forgot_password_container">
+        <div class="forgot_password_modal">
+        <h1>Create a New Password</h1>
+        <p>please enter your email address</p>
+        <form class="forgot_password_form animate">
+            <label>Email</label>
+            <input type="email" name="email" value="email" required>
+            <button type="button" onclick="document.getElementById('id03').style.display='none';document.getElementById('id04').style.display='block'">Create Password</button>
+        </form>
+      </div>
+      </div>
+      <div class="forgot_password_container" id="id04">
+        <div class=".forgot_password_modal">
+          <h1>Please Check Your Email</h1>
+          <p>we sent a link to your mail to reset your password</p>
+          <div class=".forgot_password_form">
+            <button type="button">back to website</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="main_nav"><!--navbar collapse-->
+
+  <div class="offcanvas-header mt-3">
+    <button class="btn btn-outline-danger btn-close float-right"> &times</button>
+    <h5 class="py-2 text-white">Categories</h5>
+  </div>
+
+  <ul class="navbar-nav menu" id="hightlight_nav">
+    <li class="nav-item active"> <a class="nav-link" href="../index.html">HOME </a> </li>
+    <!--<li class="nav-item dropdown show">
+      <a class="nav-link  dropdown-toggle" href="./subfiles/product.html" data-toggle="dropdown">PRODUCTS </a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Areca Products</a></li>
+        <li><a class="dropdown-item" href="#">Organic Products </a></li>
+        </ul>
+    </li>-->
+    <li class="nav-item">
+      <a class="nav-link" href="./product.html">PRODUCTS </a>
+        <ul class="dropdown_content">
+        <li><a class="dropdown-item" href="./areca_products.html">Areca Products</a></li>
+        <li><a class="dropdown-item" href="organic_products.html">Organic Products </a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="./gallery.html">GALLERY </a></li>
+    <li class="nav-item"><a class="nav-link" href="./blog.html"> BLOG </a></li>
+    <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT US </a></li>
+    <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT </a></li>
+  </ul>
+
+    </div> <!-- navbar-collapse.// -->
+  </nav>
+      </div><!--container-->
+    </header>
+    <section id="organic_products_id">
+      <div class="container">
+        <div class="organic_show">
+          <div class="organic_img_show">
+            <img src="../images/organic_symbol.jpg" alt="Areca Products">
+          </div>
+          <div class="organic_matter_show">
+            <p>The phytonutrients in <b>Organic Honey</b> are responsible for its antioxidant properties, as well as its antibacterial and antifungal power. They're also thought to be the reason <b>raw honey</b> has shown immune-boosting and anticancer benefits. Heavy processing destroys these valuable nutrients.</p>
+            <p><b>Organic Ghee</b> ontains high concentrations of monounsaturated Omega-3s. These healthful fatty acids support a healthy heart and cardiovascular system.</p>
+            <p><b>Organic Millets</b> is rich in dietary fiber, both soluble and insoluble, which means it supports good bacteria in your digestive system. This type of fiber is also important for adding bulk to stools, which helps keep you regular and reduces your risk of colon cancer.</p>
+          </div>
+        </div>
+        <div class="organic_types">
+          <h2>Organic  Honey</h2>
+          <div class="organic_type_row">
+            <div class="organic_type_box" id="honey_id">
+              <div class="img_zoom_container item1">
+                <img src="../images/honey_product_image.png" alt="organic honey">
+              </div>
+              <div class="organic_type_description">
+                <h4>Organic honey</h4>
+                <button type="button" name="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="organic_types">
+          <h2>Organic Ghee</h2>
+          <div class="organic_type_row">
+            <div class="organic_type_box" id="ghee_id">
+              <div class="img_zoom_container item2">
+                <img src="../images/ghee_product_image.png" alt="Organic ghee">
+              </div>
+              <div class="organic_type_description">
+                <h4>Organic ghee</h4>
+                <button type="button" name="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="organic_types">
+          <h2 id="millets_id">Organic Millets</h2>
+          <div class="organic_type_row">
+            <div class="organic_type_box">
+              <div class="img_zoom_container item3">
+              <img src="../images/Brown_top_millet.png" alt="Brown top millet">
+            </div>
+            <div class="organic_type_description">
+              <h4>Brown top millet</h4>
+              <button type="button" name="button">Add to cart</button>
+            </div>
+            </div>
+            <div class="organic_type_box">
+              <div class="img_zoom_container item4">
+              <img src="../images/barnyard_millet.png" alt="barnyard millet">
+            </div>
+            <div class="organic_type_description">
+              <h4>Barnyard millet</h4>
+              <button type="button" name="button">Add to cart</button>
+            </div>
+            </div>
+            <div class="organic_type_box">
+              <div class="img_zoom_container item5">
+              <img src="../images/finger_millet.png" alt="finger millet">
+            </div>
+            <div class="organic_type_description">
+              <h4>Finger millet</h4>
+              <button type="button" name="button">Add to cart</button>
+            </div>
+            </div>
+          </div>
+          <div class="organic_type_row">
+            <div class="organic_type_box">
+              <div class="img_zoom_container item6">
+              <img src="../images/foxtail_millet.png" alt="foxtail millet">
+            </div>
+            <div class="organic_type_description">
+              <h4>Foxtail millet</h4>
+              <button type="button" name="button">Add to cart</button>
+            </div>
+            </div>
+            <div class="organic_type_box">
+              <div class="img_zoom_container item7">
+              <img src="../images/kodo_millet.png" alt="kodo millet">
+            </div>
+            <div class="organic_type_description">
+              <h4>Kodo millet</h4>
+              <button type="button" name="button">Add to cart</button>
+            </div>
+            </div>
+            <div class="organic_type_box">
+              <div class="img_zoom_container item8">
+              <img src="../images/Little_millet.png" alt="little millet">
+            </div>
+            <div class="organic_type_description">
+              <h4>Little millet</h4>
+              <button type="button" name="button">Add to cart</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div><!--container ends-->
+    </section>
+    <footer id="main">
+      <div class="container mobile_container">
+        <div class="contact">
+          <address>
+            <h4>Address:</h4>
+            <p>HEALTHY BHARAT Organic Products Private Limited<br>12-5-55/1/T-2, Samskruthi Heaven APTS, Vijayapuri,<br>Tarnaka Hyderabad, Rangareddi-500017 Telangana</p>
+            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=healthybharat.organic@gmail.com&tf=1" target="_blank"><img src="../images/gmail_icon.webp" alt="gmail">healthybharat.organic@gmail.com</a><br>
+            <a href="tel:9618007307"><img src="../images/phone_icon.webp" alt="phone no:">9052223007</a>
+            <p class="copyrights">All rights reserved 2021 @ Healthy Bharat</p>
+          </address>
+            <div class="social_media">
+              <h4>Contact us:</h4>
+              <a href="https://www.facebook.com/ihealthy.bharat" target="_blank"><img src="../images/facebook_icon.webp" alt="facebook"></a>
+              <a href="https://twitter.com/healthybharat1" target="_blank"><img src="../images/twitter_icon.webp" alt="twitter"></a>
+              <a href="https://www.instagram.com/healthybharatinfo/" target="_blank"><img src="../images/instagram_icon.webp" alt="instagram"></a>
+              <a href="https://www.linkedin.com/in/healthy-bharat-36b416209/" target="_blank"><img src="../images/linkedlin.png" alt="linkedlin" width="31px" height="31px"></a>
+            </div>
+          <div class="edge_hb">
+            <h5>HEALTHY BHARAT</h5>
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="./products.html">PRODUCTS</a></li>
+              <li><a href="./gallery.html">GALLERY</a></li>
+              <li><a href="./blog.html">BLOG</a></li>
+              <li><a href="./about.html">ABOUT US</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <div class="container mobile_container">
+      <div class="fix_me">
+        <a href="https://wa.me/919052223007?text=Hi, we are glad to meet you" target="_blank" rel="noopener"><img src="../images/whatsapp_icon.png" alt="whatsapp"></a>
+      </div>
+    </div>
+    </body>
+</html>
